@@ -9,8 +9,6 @@ defmodule Rockelivery.Users.Update do
   end
 
   defp do_update(user, params) do
-    IO.inspect(params)
-
     user
     |> User.changeset(params)
     |> Repo.update()
