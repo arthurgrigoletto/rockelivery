@@ -15,7 +15,7 @@ config :rockelivery, Rockelivery.Repo,
 if System.get_env("GITHUB_ACTIONS") do
   config :rockelivery, Rockelivery.Repo,
     username: "postgres",
-    password: "postgres",
+    password: "postgres"
 end
 
 config :rockelivery, Rockelivery.Users.Create, via_cep_adapter: Rockelivery.ViaCep.ClientMock
